@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.main-box {
+  width: 17rem;
+  height: 80vh;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.main-box a:hover .overlay, .main-box a:hover .view-icon {
+  visibility: visible;
+}
+
+.img-container {
+  width: 100%;
+  height: 55%;
+  position: relative;
+}
+.img-container .big-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.img-container .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  z-index: 100;
+  opacity: 0.5;
+  visibility: hidden;
+}
+.img-container .view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  visibility: hidden;
+}
+
+h1 {
+  font-size: 1.2rem;
+  color: white;
+  margin: 1rem 0;
+}
+h1:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+.bottom .eth {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bottom .eth img {
+  width: 10px;
+}
+.bottom .eth p {
+  font-size: 0.8rem;
+  color: hsl(178, 100%, 50%);
+}
+.bottom .days-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bottom .days-left img {
+  width: 14px;
+}
+.bottom .days-left p {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.profile {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  gap: 0.8rem;
+  color: hsl(215, 51%, 70%);
+}
+.profile .avatar {
+  width: 30px;
+  height: 30px;
+  background-color: cyan;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.profile .avatar img {
+  width: 100%;
+}
+.profile p {
+  font-size: 0.8rem;
+}
+.profile a {
+  text-decoration: none;
+  color: white;
+}
+.profile a:hover {
+  color: cyan;
+}
+
+/*# sourceMappingURL=style.css.map */
