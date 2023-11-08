@@ -21,15 +21,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .main-box {
-  width: 17rem;
-  height: 80vh;
+  width: 60%;
+  height: 90%;
   background-color: hsl(216, 50%, 16%);
   padding: 1rem;
   border-radius: 10px;
+}
+@media (min-width: 300px) {
+  .main-box {
+    width: 17rem;
+  }
 }
 .main-box a:hover .overlay, .main-box a:hover .view-icon {
   visibility: visible;
